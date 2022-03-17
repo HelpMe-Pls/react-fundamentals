@@ -24,11 +24,20 @@
 		// // This is similar to ReactDOM.render
 		// rootElement.append(element)
 
+		const childElement1 = React.createElement('span', null, 'It is')
+		const childElement2 = React.createElement('span', {
+			children: ' what it is',
+		})
+
+		const elementType = 'div'
 		const elementProps = {
 			className: 'container',
-			children: 'It is what it is.',
+			// try console.log() an element with MULTIPLE children like for example:
+			// const childElement2 = React.createElement('span', null, ' what', 'it', 'is')
+			// you'll see that the prop "children" is actually an ARRAY, therefore we need to identify the "children" below as an array:
+			children: [childElement1, childElement2],
 		}
-		const elementType = 'div'
+
 		const reactElement = React.createElement(elementType, elementProps)
 		ReactDOM.render(reactElement, rootElement)
 
