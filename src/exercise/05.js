@@ -4,10 +4,19 @@
 import * as React from 'react'
 import '../box-styles.css'
 
-const Box = ({className, style, children}) => (
-	<div className={`box ${className}`} style={{...style, fontStyle: 'italic'}}>
-		{children}
-	</div>
+// const Box = ({className, style, children}) => (	// this is not optimal coz what if you'd want to pass other props rather than just `children` ?
+// 	<div className={`box ${className}`} style={{...style, fontStyle: 'italic'}}>
+// 		{children}
+// 	</div>
+// )
+
+// a better way to do that is spreading the rest of the props (i.e. you just don't care what it could be):
+const Box = ({style, className, ...otherProps}) => (
+	<div
+		className={`box ${className}`}
+		style={{fontStyle: 'italic', ...style}}
+		{...otherProps}
+	/>
 )
 
 function App() {
