@@ -11,16 +11,14 @@
 		const message = ({children}) => (
 			<div className="message">{children}</div>
 		)
-		const helloElement = React.createElement(message, {
-			children: 'Hello World',
-		})
+		const Hello = ({children}) => <div className="message">{children}</div>
 		// 🐨 use that function in place of the divs below with:
 		// 💰 {message({children: 'Hello World'})} {message({children: 'Goodbye World'})}
 		const element = (
 			<div className="container">
 				{/*<div className="message">Hello World</div>
 				<div className="message">Goodbye World</div> */}
-				{helloElement}
+				<Hello>It is what it is</Hello>
 				{React.createElement(message, {children: 'Goodbye World'})}
 			</div>
 		)
