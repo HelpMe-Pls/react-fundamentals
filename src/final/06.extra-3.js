@@ -5,40 +5,40 @@
 import * as React from 'react'
 
 function UsernameForm({onSubmitUsername}) {
-  const [username, setUsername] = React.useState('')
+	const [username, setUsername] = React.useState('')
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    onSubmitUsername(username)
-  }
+	function handleSubmit(event) {
+		event.preventDefault()
+		onSubmitUsername(username)
+	}
 
-  function handleChange(event) {
-    setUsername(event.target.value.toLowerCase())
-  }
+	function handleChange(event) {
+		setUsername(event.target.value.toLowerCase())
+	}
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="usernameInput">Username:</label>
-        <input
-          id="usernameInput"
-          type="text"
-          onChange={handleChange}
-          value={username}
-        />
-      </div>
-      <button type="submit">Submit</button>
-    </form>
-  )
+	return (
+		<form onSubmit={handleSubmit}>
+			<div>
+				<label htmlFor="usernameInput">Username:</label>
+				<input
+					id="usernameInput"
+					type="text"
+					onChange={handleChange}
+					value={username}
+				/>
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+	)
 }
 
 function App() {
-  const onSubmitUsername = username => alert(`You entered: ${username}`)
-  return (
-    <div style={{minWidth: 400}}>
-      <UsernameForm onSubmitUsername={onSubmitUsername} />
-    </div>
-  )
+	const onSubmitUsername = username => alert(`You entered: ${username}`)
+	return (
+		<div style={{minWidth: 400}}>
+			<UsernameForm onSubmitUsername={onSubmitUsername} />
+		</div>
+	)
 }
 
 export default App
