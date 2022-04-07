@@ -21,4 +21,8 @@
 - `React.Fragment` allows you to position two elements side-by-side rather than being nested inside a parent element
 
 ## TypeScript
-- Use Constrained Identity Functions [(CIF)]() to constrain types more generically.
+- Use Constrained Identity Functions [(CIF)](https://github.com/HelpMe-Pls/react-fundamentals/blob/extra/src/final/TS/init.tsx) to constrain types more generically.
+
+## Styling
+- Create a custom component with default props and spreading optional props
+- [Represent](https://github.com/HelpMe-Pls/react-fundamentals/blob/extra/src/exercise/05.js) a default prop with a custom prop 
