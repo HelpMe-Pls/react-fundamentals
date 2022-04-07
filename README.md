@@ -34,3 +34,6 @@
 - Using `React.useRef()` to implement a "form element" as an **uncontrolled** element (using the DOM to save the form values) 
 - Using the default `value` prop of the `<input>` element with `React.useState()` to implement a **controlled** form component
 - The only benefit of a controlled component is that you can change the value of the input programatically. Otherwise you don't need it to be controlled.
+
+## Rendering Arrays
+- Whenever you're rendering an array of React elements, each one must have a unique `key` prop. [See what happens](http://react-fundamentals.netlify.app/isolated/final/07.extra-1.js) if we don't have it
