@@ -21,3 +21,4 @@
 - `React.Fragment` allows you to position two elements side-by-side rather than being nested inside a parent element
 
 ## TypeScript
+- Use Constrained Identity Functions [(CIF)]() to constrain types more generically.
