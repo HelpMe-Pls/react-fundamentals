@@ -26,3 +26,11 @@
 ## Styling
 - Create a custom component with default props and spreading optional props
 - [Represent](https://github.com/HelpMe-Pls/react-fundamentals/blob/extra/src/exercise/05.js) a default prop with a custom prop 
+
+## Forms
+- `<label htmlFor=...>` in JSX is `<label for=...>` in HTML. 
+- `event.preventDefault()`
+- Improve form typing by extending the `HTMLFormElement` interface and override the `elements` to have a customized type that [we can define](https://github.com/HelpMe-Pls/react-fundamentals/blob/extra/src/final/TS/06.tsx).
+- Using `React.useRef()` to implement a "form element" as an **uncontrolled** element (using the DOM to save the form values) 
+- Using the default `value` prop of the `<input>` element with `React.useState()` to implement a **controlled** form component
+- The only benefit of a controlled component is that you can change the value of the input programatically. Otherwise you don't need it to be controlled.
