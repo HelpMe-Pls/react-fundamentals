@@ -1,7 +1,13 @@
 # What I've learnt
 ###### *For more details, see [`src/exercise/*.md`](https://github.com/HelpMe-Pls/react-fundamentals/tree/master/src/exercise) files*
 -------------
-
+## Thinking in React
+- To implement a UI in React, you will usually follow the [following steps](https://beta.reactjs.org/learn/thinking-in-react):
+	1. Break the UI into a ***component hierarchy*** (where each component matches one piece of your data model).
+	2. Build a ***static*** version in React (build components that reuse other components and pass data from parent to child using props, not thinking about state *yet*). On small-medium projects, you can go “top down” by starting with building the components higher up in the hierarchy (i.e. the component at the top of the hierarchy will take your data model as its prop). For larger projects, it’s easier to go "bottom-up".
+	3. Find the minimal but complete representation of UI state (i.e. identify [props vs state](https://beta.reactjs.org/learn/thinking-in-react#step-3-find-the-minimal-but-complete-representation-of-ui-state)).
+	4. Identify [[Where to put state.png |where]] your state should live.
+	5. Add inverse data flow (i.e. state flow between components).
 ## VanillaJS
 - Using VanillaJS (inside of a HTML `script` tag) to generate HTML elements.
 
